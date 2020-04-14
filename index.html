@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Survey Form</title>
+ <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <div class="container">
+ <header class="header">
+  <h1 id="title" class="text-center">Welcome to survey - "Sause I like the most"</h1>
+  <p id="description">Thank you for taking the time to help us see what is the most popular sause in the world</p>
+ </header>
+ <form id="survey-form" class="survey-form">
+  <div class="input-form">
+   <label for="name" id="name-label">Name</label>
+   <input id="name" type="text" placeholder="Enter your name" required>
+  </div>
+  <div class="input-form">
+   <label for="email" id="email-label">Email</label>
+   <input id="email" type="email" placeholder="Enter your email" required>
+  </div>
+  <div class="input-form">
+   <label for="number" id="number-label">Age</label>
+   <input id="number" type="number" min="10" max="99" placeholder="Enter your age">
+  </div>
+  <div id="option-selector-form" class="input-form">
+   <p class="form-name-text">Which sause you like the most!</p>
+   <select name="please choose your option" id="dropdown">
+    <option disabled="" selected="" value="">Select an option</option>
+    <option value="kethup">kethup</option>
+    <option value="mayo">mayo</option>
+    <option value="salsa">salsa</option>
+    <option value="barbequ">barbequ</option>
+    <option value="soy-sause">soy-sause</option>
+   </select>
+  </div>
+  <div class="input-form" class="radio">
+   <p class="form-name-text">How ofter do you it your favorite sause?</p>
+   <label for="radio-form"><input type="radio" checked="" value="Everyday" name="radio-form"> Everyday</label>
+    <label for="radio-form">
+  <input type="radio" value="once per week" name="radio-form"> Once per week</label>
+  <label for="radio-form">
+  <input type="radio" value="Once per month" name="radio-form"> Once per month
+   </label>
+  </div>
+  <div id="option-selector-form" class="input-form">
+   <p class="form-name-text">What do you like in sause so much?</p>
+   <select name="please choose your option" id="dropdown">
+    <option disabled="" selected="" value="">select an option</option>
+    <option value="Its sweetness">Its sweetness</option>
+    <option value="Intesity">Intesity</option>
+    <option value="Aftertaste">Aftertaste</option>
+    <option value="Mixture of herbs and spices">Mixture of herbs and spices</option>
+    <option value="Everything!">Everything!</option>
+   </select>
+  </div>
+  <div id="check-box-form" class="input-form">
+   <p class="form-name-text">Where do you seek new sause recepies?</p>
+   <label for="checkbox-form">
+    <input type="checkbox" checked="" value="Magazines" name="radio-form"> Magazines
+   </label>
+   <label for="checkbox-form">
+    <input type="checkbox" value="TV" name="radio-form"> TV
+   </label>
+   <label for="checkbox-form">
+    <input type="checkbox" value="Friends" name="radio-form"> Friends
+   </label>
+   <label for="checkbox-form">
+    <input type="checkbox" value="Famous Chefs" name="radio-form"> Famous Chefs
+   </label>
+   <label for="checkbox-form">
+    <input type="checkbox" value="In restaraunts" name="radio-form"> In restaraunts
+   </label>
+   <label for="checkbox-form">
+    <input type="checkbox" value="Youtube channels" name="radio-form"> Youtube channels
+   </label>
+   <label for="checkbox-form">
+    <input type="checkbox" value="Food and spice markets" name="radio-form"> Food and spice markets
+   </label>
+  </div>
+  <div class="input-form">
+   <p class="form-name-text">Would you like to add suggestions or new recepios on our web-site?</p>
+   <textarea name="comments" id="text-area" cols="30" rows="10"></textarea>
+  </div>
+  <div class="input-form" >
+   <button type="submit" id="submit" class="submit-button">Submit</button>
+
+  </div>
+ </form>
+</div>
+
+</body>
+</html>
